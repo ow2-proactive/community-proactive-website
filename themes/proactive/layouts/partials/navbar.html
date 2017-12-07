@@ -1,0 +1,19 @@
+<nav class="head-bar navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top border-bottom-grey">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="{{ .Site.BaseURL }}images/activeeon-logo.png" alt="ActiveEon" height="50" class="d-inline-block align-top" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" />
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+				{{ range $.Site.Menus.main }}
+				<li class="nav-item">
+                    <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,66 @@
+baseURL = "http://localhost:1313/"
+title = "ProActive from Activeeon"
+theme = "proactive"
+languageCode = "en-us"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+[params]
+  description = "Translate business processes to IT workflows with ProActive, a flexible orchestration and scheduling solution."
+  
+
+[permalinks]
+  page = "/:filename/"
+
+[author]
+  name = "nicolas narbais"
+  
+
+[menu]
+
+# Main menu
+
+[[menu.main]]
+  name = "Home"
+  url  = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Get Started"
+  url  = "/get-started/"
+  weight = 2
+
+[[menu.main]]
+  name = "Community"
+  url  = "/community/"
+  weight = 3
+
+[[menu.main]]
+  name = "Release Notes"
+  url  = "/release-notes/"
+  weight = 4
+
+[[menu.main]]
+  name = "Blog"
+  url  = "http://blog.activeeon.com/"
+  weight = 5
+
+[[menu.main]]
+  name = "About"
+  url  = "/about/"
+  weight = 6
+  
+[params.links.activeeon]
+  home = "https://www.activeeon.com/"
+  contact = "https://www.activeeon.com/about/contact"
+  customers = "https://www.activeeon.com/about/customers"
+  events = "https://www.activeeon.com/about/news-events"
+  try = "https://try.activeeon.com/"
+  trystudio = "https://try.activeeon.com/studio/"
+  tryscheduler = "https://try.activeeon.com/scheduler/"
+  blog = "http://blog.activeeon.com/"
+  hub = "http://hub.activeeon.com"
+  repoproactive = "http://github.com/ow2-proactive"
+  repobugtracker = "https://github.com/ow2-proactive/scheduling/issues"
+  doc = "https://www.activeeon.com/public_content/documentation/"
+  ow2 = "https://projects.ow2.org/bin/view/proactive/"

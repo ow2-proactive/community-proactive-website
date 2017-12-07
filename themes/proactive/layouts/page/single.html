@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+	{{ partial "head.html" . }}
+
+	<body>
+	
+	{{ partial "navbar.html" . }}
+
+	{{ if isset .Params "id" }}
+		{{ partial .Params.id . }}
+	{{ end }}
+
+	{{ partial "footer.html" . }}
+	{{ partial "javascript.html" . }}
+	
+	</body>
+</html>

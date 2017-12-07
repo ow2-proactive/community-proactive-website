@@ -1,0 +1,17 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title>ProActive {{ .Title }}</title>
+	<meta name="author" content={{ .Site.Author.name }} />
+	
+	{{ if .Site.Params.Description }}
+	<meta name="description" content={{ .Site.Params.Description }}>	
+	{{ end }}
+	
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/app.css">
+    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon.ico"> <!-- TODO: Change Favicon -->
+</head>
