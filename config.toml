@@ -1,4 +1,5 @@
-baseURL = "http://localhost:1313/"
+#baseURL = "http://localhost:1313/"
+baseURL = "https://fr3nchn.github.io/proactive/"
 title = "ProActive from Activeeon"
 theme = "proactive"
 languageCode = "en-us"
