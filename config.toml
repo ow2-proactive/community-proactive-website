@@ -3,7 +3,7 @@ title = "ProActive from Activeeon"
 theme = "proactive"
 languageCode = "en-us"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-31966922-1"
 
 [params]
   description = "Translate business processes to IT workflows with ProActive, a flexible orchestration and scheduling solution."
