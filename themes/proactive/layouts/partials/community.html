@@ -44,22 +44,20 @@
                         <hr />
                     </div>
                 </div>
-                <div class="row">
-                    <div class="card-deck">
-                        {{ range $index, $element := sort .Site.Data.usecases "weight" }}
-                        <div class="card">
-                            <img class="card-img-top" src="{{ $.Site.BaseURL }}{{ $element.image }}" alt="{{ $element.title }}" />
-                            <div class="card-body text-center">
-                                <h4 class="card-title">{{ $element.title }}</h4>
-                                <p class="card-text text-muted">{{ $element.description }}</p>
-                                <a href="{{ $element.pdfurl }}" class="btn btn-outline-secondary" target="_blank">
-                                    Download
-                                </a>
-                            </div>
+                <div class="card-deck">
+                    {{ range $index, $element := sort .Site.Data.usecases "weight" }}
+                    <div class="card">
+                        <img class="card-img-top" src="{{ $.Site.BaseURL }}{{ $element.image }}" alt="{{ $element.title }}" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">{{ $element.title }}</h4>
+                            <p class="card-text text-muted">{{ $element.description }}</p>
+                            <a href="{{ $element.pdfurl }}" class="btn btn-outline-secondary" target="_blank">
+                                Download
+                            </a>
                         </div>
-                        {{ end }}
                     </div>
-				</div>
+                    {{ end }}
+                </div>
 			</div>
 		</div>
 		{{ end }}
