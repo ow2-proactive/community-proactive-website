@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ProActive from Activeeon</title>
-    <link>https://ow2-proactive.github.io/community-proactive-website/</link>
+    <link>http://beta.activeeon.com/</link>
     <description>Recent content on ProActive from Activeeon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ow2-proactive.github.io/community-proactive-website/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://beta.activeeon.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://ow2-proactive.github.io/community-proactive-website/about/</link>
+      <link>http://beta.activeeon.com/about/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ow2-proactive.github.io/community-proactive-website/about/</guid>
+      <guid>http://beta.activeeon.com/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Community</title>
-      <link>https://ow2-proactive.github.io/community-proactive-website/community/</link>
+      <link>http://beta.activeeon.com/community/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ow2-proactive.github.io/community-proactive-website/community/</guid>
+      <guid>http://beta.activeeon.com/community/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Get Started</title>
-      <link>https://ow2-proactive.github.io/community-proactive-website/get-started/</link>
+      <link>http://beta.activeeon.com/get-started/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ow2-proactive.github.io/community-proactive-website/get-started/</guid>
+      <guid>http://beta.activeeon.com/get-started/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Release Notes</title>
-      <link>https://ow2-proactive.github.io/community-proactive-website/release-notes/</link>
+      <link>http://beta.activeeon.com/release-notes/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ow2-proactive.github.io/community-proactive-website/release-notes/</guid>
+      <guid>http://beta.activeeon.com/release-notes/</guid>
       <description></description>
     </item>
     

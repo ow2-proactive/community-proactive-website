@@ -1,5 +1,6 @@
 #baseURL = "http://localhost:1313/"
-baseURL = "https://ow2-proactive.github.io/community-proactive-website/"
+#baseURL = "https://ow2-proactive.github.io/community-proactive-website/"
+baseURL = "http://beta.activeeon.com/"
 title = "ProActive from Activeeon"
 theme = "proactive"
 languageCode = "en-us"
