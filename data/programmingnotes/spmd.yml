@@ -1,0 +1,3 @@
+weight: 10
+title: "SPMD"
+description: "SPMD technique is perfect for solving tightly-coupled parallel problems requiring intensive communications (CFD, Maxwell,...). This is an alternative to MPI in Java"

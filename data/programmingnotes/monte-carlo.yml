@@ -1,0 +1,3 @@
+weight: 4
+title: "Monte-Carlo"
+description: "A Task-based API similar to Master-Worker, specialized for monte-carlo simulations"
