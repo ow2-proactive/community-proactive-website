@@ -3,7 +3,7 @@ date: 2017-03-14
 community:
   - "New LDAP query task, available in Studio predefined tasks"
   - "Remote visualization task: see example in Studio template"
-  - "Resource management: new node locking and node unlocking features"
+  - "Resource management: new node locking/unlocking features"
   - "Declarative rule based model for workflow variables"
   - "File Trigger: new tasks for file event monitoring and job triggering (new file, new directory, file change, etc.)"
 enterprise:
