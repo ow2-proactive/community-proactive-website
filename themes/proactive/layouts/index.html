@@ -185,7 +185,7 @@
 				            <h2>Try Online</h2>
 				            <hr/>
 				            <p class="h4">
-				                Try it for free <a href="{{ .Site.Params.Links.Activeeon.home }}" target="_blank">here</a> and follow this tutorial in <a href="getstarted">3 steps</a>.
+				                Try it for free <a href="{{ .Site.Params.Links.Activeeon.home }}" target="_blank">here</a> and follow this tutorial in <a href='{{ with .Site.GetPage "page" "get-started.md" }}{{ .URL }}{{ end }}'>3 steps</a>.
 				            </p>
 				            <div>
 				                <a class="btn btn-outline-primary" href="{{ .Site.Params.Links.Activeeon.try }}" target="_blank">Try It</a>
