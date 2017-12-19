@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+	{{ partial "head.html" . }}
+
+	<body>
+
+		{{ partial "navbar.html" . }}
+
+		<div class="background-image border-bottom-grey">
+			<div class="jumbotron jumbotron-fluid mb-0 background-orange-transparent">
+				<div class="container">
+				    <div class="row">
+				        <div class="col-md-8 text-white">
+				            <h1 class="display-1">Activeeon</h1>
+				            <p class="h2 mb-4">Job Scheduling, Workload Automation, Orchestration & Metascheduling on-premises and on all clouds.</p>
+				            <a class="btn btn-outline-light" href='{{ with .Site.GetPage "page" "get-started.md" }}{{ .URL }}{{ end }}'>Try it in 3 steps</a>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+		{{ if gt (len .Site.Data.news) 0 }}
+		<div class="background-lightgray border-bottom-grey">
+			<div class="container pb-3 pt-3">
+				<div class="row justify-content-md-center">
+				    <div class="col-md-8 text-center">
+				        <h2>Latest News</h2>
+				        <hr />
+				    </div>
+				</div>
+				<div class="row">
+				    {{ range $index, $element := sort .Site.Data.news "weight" }}
+				    <div class="col-sm-4 text-center">
+				        <h3 class="h4 text-orange">{{ $element.title}}</h3>
+				        <p>{{ $element.content }}</p>
+				    </div>
+				    {{ end }}
+				</div>
+				<div class="row justify-content-md-center">
+				    <div class="col-md-8 text-center">
+                        <hr />
+				        <a class="btn btn-outline-secondary" href='{{ with .Site.GetPage "page" "release-notes.md" }}{{ .URL }}{{ end }}'>Latest Release</a>
+				    </div>
+				</div>
+			</div>
+		</div>
+		{{ end }}
+
+
+		{{ if gt (len .Site.Data.values) 0 }}
+		<div class="container mb-3 mt-5">
+			<div class="row mb-5 justify-content-md-center">
+				<div class="col-md-8 text-center">
+				    <h2>ProActive from Activeeon</h2>
+				    <p class="h4">Job Scheduling, Workload Automation, Orchestration & Metascheduling on-premises and on all clouds</p>
+				    <p class="h5">Workflow engine to automate and orchestrate your business processes</p>
+				</div>
+			</div>
+			{{ range $index, $element := sort .Site.Data.values "weight" }}
+			<div class="row align-items-center justify-content-md-center">
+				{{ if eq (mod $index 2) 0 }}
+				<div class="col-md-3">
+				    <img src="{{ $.Site.BaseURL }}{{ $element.image }}" alt="{{ $element.title }}" class="img-fluid" />
+				</div>
+				<div class="col-md-5 text-center">
+				    <h3 class="h4 text-blue">{{ $element.title }}</h3>
+				    <ul class="list-unstyled">
+				        {{ range $i, $item := $element.content }}
+				        <li>{{ $item }}</li>
+				        {{ end }}
+				    </ul>
+				</div>
+				{{ else }}
+				 <div class="col-md-5 text-center">
+				    <h3 class="h4 text-blue">{{ $element.title }}</h3>
+				    <ul class="list-unstyled">
+				        {{ range $i, $item := $element.content }}
+				        <li>{{ $item }}</li>
+				        {{ end }}
+				    </ul>
+				</div>
+				 <div class="col-md-3">
+				    <img src="{{ $.Site.BaseURL }}{{ $element.image }}" alt="{{ $element.title }}" class="img-fluid" />
+				</div>
+				{{ end }}
+				{{ if lt $index 5 }}
+				<div class="col-md-8">
+				    <hr />
+				</div>
+				{{ end }}
+			</div>
+			{{ end }}
+		</div>
+		{{ end }}
+
+		<div class="background-home-request">
+			<div class="background-orange-transparent">
+				<div class="container">
+				    <div class="row row-setheight align-items-center">
+				        <div class="col-6 text-center">
+				            <h2 class="display-3 text-white">Get in touch</h2>
+				            <a href="mailto:contact@activeeon.com?Subject=[ProActive]%20Request%20for%20information" class="btn btn-light">Contact us</a>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+		{{ if gt (len .Site.Data.features) 0 }}
+		<div class="container mt-4">
+			<div class="row justify-content-md-center">
+				<div class="col-md-8 text-center">
+				    <h2>A few Features</h2>
+				    <hr />
+				</div>
+			</div>                                                                                                        
+			<div class="row justify-content-md-center">
+				{{ range $index, $element := sort .Site.Data.features "weight" }}
+				<div class="col-md-4 text-center m-3">
+				    <h3>{{ $element.title }}</h3>
+				    <ul class="list-unstyled text-muted">
+				        {{ range $i, $item := $element.content }}
+				        <li>{{ $item }}</li>
+				        {{ end }}
+				    </ul>
+				</div>
+				{{ end }}
+			</div>
+		</div>
+		{{ end }}
+
+		<div class="background-lightgray border-bottom-grey border-top-grey">
+			<div class="container pb-3 pt-3">
+				<div class="row mt-5 mb-5 align-items-center">
+				    <div class="col-lg-7">
+				        <h2>Project Overview</h2>
+				        <hr />
+				        <p>
+				        ProActive Parallel Suite is an innovative project, member of the OW2 Open Source Community, for <strong>acceleration and orchestration</strong> of applications, <strong> seamlessly integrated with the management of high-performance Clouds </strong> (Private and Public with bursting capabilities).
+				        </p>
+				        <p>
+				            ProActive Parallel Suite platforms features High-Performance Workflows and Application Parallelization, together with enterprise Scheduling and Orchestration coupled with the dynamic management of private Heterogeneous Grids and Clouds. With a ProActive platform, our users tackle at once the acceleration and orchestration of all demanding enterprise applications, and the management of their own Enterprise Cloud.
+				        </p>
+				        <p>
+				            Professional support and services are delivered by <a href="{{ .Site.Params.Links.Activeeon.home }}" target="_blank">Activeeon company.</a>
+				        </p>
+				        <p class="text-center">
+				            <hr/>
+							<a href="{{ .Site.Params.Links.Activeeon.ow2 }}" target="_blank">
+								<img src="images/ow2_logo.svg" alt="ow2" class="image-ow2"/>
+							</a>
+						</p>
+				    </div>
+				    <div class="col-lg-5">
+				        <div class="row">
+				            {{ if gt (len .Site.Data.projects) 0 }}
+				            {{ range $index, $element := sort .Site.Data.projects "weight" }}
+				            <div class="col-sm-5 background-verylightgray m-1 pt-2">
+				                <img src="{{ $.Site.BaseURL }}{{ $element.image }}" alt={{ $element.title }} class="img-fluid mb-2"/>
+				                <p><small>
+				                    {{ $element.description }}
+				                </small></p>
+				                <ul class="list-unstyled text-muted"><small>
+				                    {{ range $i, $item := $element.content }}
+				                    <li>{{ $item }}</li>
+				                    {{ end }}
+				                    <li><a href="{{ $element.link }}" target="_blank">more...</a></li>
+				                </small></ul>
+				            </div>
+				            {{ end }}
+				            {{ end }}
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="background-home-try mt-0">
+			<div class="background-white">
+				<div class="container">
+				    <div class="row justify-content-md-center align-items-center">
+				        <div class="col-lg-5 text-center">
+				            <h2>Try Online</h2>
+				            <hr/>
+				            <p class="h4">
+				                Try it for free <a href="{{ .Site.Params.Links.Activeeon.home }}" target="_blank">here</a> and follow this tutorial in <a href='{{ with .Site.GetPage "page" "get-started.md" }}{{ .URL }}{{ end }}'>3 steps</a>.
+				            </p>
+				            <div>
+				                <a class="btn btn-outline-primary" href="{{ .Site.Params.Links.Activeeon.try }}" target="_blank">Try It</a>
+				            </div>
+				        </div>
+				        <div class="col-lg-5">
+				            <div class="row justify-content-md-center">
+				                <div class="col-12 text-center">
+				                    <h2>Strategic Alliances</h2>
+				                    <hr />
+				                </div>
+				                <div class="col-3">
+				                    <img src="images/alliance/alliance-aws.png" alt="aws" class="img-thumbnail mb-2"/>
+				                </div>
+				                <div class="col-3">
+				                    <img src="images/alliance/alliance-azure.png" alt="azure" class="img-thumbnail mb-2"/>
+				                </div>
+				                <div class="col-3">
+				                    <img src="images/alliance/alliance-capgemini.png" alt="capgemini" class="img-thumbnail mb-2"/>
+				                </div>
+				                <div class="col-3">
+				                    <img src="images/alliance/alliance-devoteam.png" alt="devoteam" class="img-thumbnail mb-2"/>
+				                </div>
+				                <div class="col-3">
+				                    <img src="images/alliance/alliance-docker.png" alt="docker" class="img-thumbnail mb-2"/>
+				                </div>
+				                <div class="col-3">
+				                    <img src="images/alliance/alliance-gcp.png" alt="gcp" class="img-thumbnail mb-2"/>
+				                </div>
+				                <div class="col-3">
+				                    <img src="images/alliance/alliance-sap.png" alt="sap" class="img-thumbnail mb-2"/>
+				                </div>
+				                <div class="col-3">
+				                    <img src="images/alliance/alliance-suse.png" alt="suse" class="img-thumbnail mb-2"/>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+		{{ partial "footer.html" . }}
+		{{ partial "javascript.html" . }}
+	
+	</body>
+</html>
+
