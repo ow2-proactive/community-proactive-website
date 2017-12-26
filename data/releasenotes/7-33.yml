@@ -7,4 +7,5 @@ enterprise:
   - "Complete management of buckets at menu level"
   - "Better support of HostsFileBasedInfrastructure (ex. SSH2)"
   - "Improvements on the Nodes & Task Recovery"
+  - "Import script in a task by reference from the catalog"
   - "Submit workflows in the catalog directly using the scheduler api in any task"
