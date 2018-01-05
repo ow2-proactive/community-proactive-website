@@ -7,5 +7,7 @@
 
     ga('create', '{{ .Site.GoogleAnalytics }}', 'auto');
     ga('send', 'pageview', location.pathname);
+
+    setTimeout("ga('send', 'event', 'Profitable engagement', 'Time on page more than 40 sec')",40000); // Send event after 40 sec to consider people staying more than 40 sec as not bouncing
 </script>
 <!-- End Google Analytics -->
