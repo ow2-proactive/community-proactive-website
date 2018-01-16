@@ -9,4 +9,9 @@ Redirect /releasenotes http://proactive.activeeon.com/release-notes/
 Redirect /pacagrid http://proactive.activeeon.com
 Redirect /index.php/?page=nqueens25 http://proactive.activeeon.com
 Redirect /index.php/?page=careers http://proactive.activeeon.com
+Redirect /getstarted http://proactive.activeeon.com/get-started/
+Redirect /nqueens25.html http://proactive.activeeon.com
+Redirect /doc/ASP.ps http://proactive.activeeon.com
+
+
 
