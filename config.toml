@@ -49,9 +49,14 @@ googleAnalytics = "UA-31966922-1"
   weight = 5
 
 [[menu.main]]
+  name = "Hub"
+  url  = "http://hub.activeeon.com/"
+  weight = 6
+
+[[menu.main]]
   name = "About"
   url  = "/about/"
-  weight = 6
+  weight = 7
   
 [params.links.activeeon]
   home = "https://www.activeeon.com/"
