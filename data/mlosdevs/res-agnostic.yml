@@ -1,0 +1,10 @@
+weight: 1
+id: "res-agnostic"
+title: "Develop Once, Deploy Anywhere"
+subtitle: "Become agnostic to the resource from dev to prod"
+image: "images/ml-os/screenshot-resources.png"
+date: "2017-02-12"
+description:
+  - Benefit from an abstraction layer on the resource
+  - Run workloads locally, on-prem, in the cloud (Azure, AWS, Gcloud, OpenStack, VmWare, etc.)
+  - Move to production in minutes and not hours or days

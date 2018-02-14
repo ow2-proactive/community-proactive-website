@@ -1,0 +1,9 @@
+weight: 5
+id: "rest-api"
+title: "Comprehensive Rest API"
+subtitle: "Integrate and build with a completely open solution"
+image: "images/ml-os/rest.png"
+date: "2017-02-12"
+description:
+  - Trigger workflow execution, prioritization, etc. from external applications
+  - Monitor execution from thrid party services

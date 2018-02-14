@@ -39,24 +39,29 @@ googleAnalytics = "UA-31966922-1"
   weight = 3
 
 [[menu.main]]
+  name = "ML Open Studio"
+  url = "/ml-os/"
+  weight = 4
+
+[[menu.main]]
   name = "Release Notes"
   url  = "/release-notes/"
-  weight = 4
+  weight = 5
 
 [[menu.main]]
   name = "Blog"
   url  = "http://blog.activeeon.com/"
-  weight = 5
+  weight = 6
 
 [[menu.main]]
   name = "Hub"
   url  = "http://hub.activeeon.com/"
-  weight = 6
+  weight = 7
 
 [[menu.main]]
   name = "About"
   url  = "/about/"
-  weight = 7
+  weight = 8
   
 [params.links.activeeon]
   home = "https://www.activeeon.com/"

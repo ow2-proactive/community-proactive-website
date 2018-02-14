@@ -1,0 +1,11 @@
+weight: 2
+id: "schedule-monitor"
+title: "Schedule and monitor workloads"
+subtitle: "Plan jobs, add execution exceptions and monitor them"
+image: "images/ml-os/monitoring.png"
+date: "2017-02-12"
+description:
+  - Setup cron expression to repeat execution
+  - Setup periods of non execution (e.g. for maintenance)
+  - Setup additional execution (e.g. for bank holidays)
+  - Monitor all jobs from a single interface

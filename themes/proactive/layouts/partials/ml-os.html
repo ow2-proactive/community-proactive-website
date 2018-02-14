@@ -1,0 +1,138 @@
+	<div class="jumbotron jumbotron-fluid background-image-getstarted">
+		<div class="container">
+		    <div class="row">
+		        <div class="col-sm-10 text-white">
+		            <h1 class="display-1">ML Open Studio</h1>
+					<p class="h2">Machine Learning from dev to production</p>
+					<a href="#mlos-dev" class="btn btn-outline-light">For dev</a>
+					<a href="#mlos-prod" class="btn btn-outline-light">For prod</a>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+	{{ if gt (len .Site.Data.mlosdevs) 0 }}
+	<div class="container mb-3 mt-3 pt-5" id="mlos-dev">
+		<div class="row justify-content-center">
+			<div class="col-8 text-center">
+				<h2><small class="text-darkgrey">For Devs & Data Scientists</small> <br /> Agility and Openness</h2>
+				<hr />
+			</div>
+		</div>
+		{{ $len := len .Site.Data.mlosdevs }} 
+		{{ range $index, $element := sort .Site.Data.mlosdevs "weight" }}
+		<div class="row align-items-center justify-content-md-center">
+			{{ if eq (mod $index 2) 0 }}
+			<div class="col-md-4">
+				<img src="{{ $.Site.BaseURL }}{{ $element.image }}" alt="{{ $element.title }}" class="img-fluid border border-secondary" />
+			</div>
+			<div class="col-md-6">
+				<h3 class="h4 text-blue">{{ $element.title }}</h3>
+				<p>{{ $element.subtitle }}</p>
+				<ul>
+				{{ range $i, $item := $element.description }}
+					<li>{{ $item }}</li>
+				{{ end }}
+				</ul>
+			</div>
+			{{ else }}
+				<div class="col-md-6">
+				<h3 class="h4 text-blue">{{ $element.title }}</h3>
+				<p>{{ $element.subtitle }}</p>
+				<ul>
+				{{ range $i, $item := $element.description }}
+					<li>{{ $item }}</li>
+				{{ end }}
+				</ul>
+			</div>
+				<div class="col-md-4">
+				<img src="{{ $.Site.BaseURL }}{{ $element.image }}" alt="{{ $element.title }}" class="img-fluid border border-secondary" />
+			</div>
+			{{ end }}
+			{{ if ne (add $index 1) $len }}
+			<div class="col-md-8">
+				<hr />
+			</div>
+			{{ end }}
+		</div>
+		{{ end }}
+	</div>
+	{{ end }}
+
+	{{ if gt (len .Site.Data.mlosprod) 0 }}
+	<div class="background-lightgray" id="mlos-prod">
+	<div class="container pt-5 mt-3 mb-3">
+		<div class="row justify-content-center">
+			<div class="col-8">
+				<h2><small class="text-darkgrey">For Production</small> <br /> Orchestration and Control</h2>
+				<hr />
+			</div>
+		</div>
+		{{ $len := len .Site.Data.mlosprod }} 
+		{{ range $index, $element := sort .Site.Data.mlosprod "weight" }}
+		<div class="row align-items-center justify-content-md-center">
+			<div class="col-md-2">
+				<img src="{{ $.Site.BaseURL }}{{ $element.image }}" alt="{{ $element.title }}" class="img-fluid" />
+			</div>
+			<div class="col-md-6">
+				<h3 class="h4 text-blue">{{ $element.title }}</h3>
+				<p>{{ $element.subtitle }}</p>
+				<ul>
+				{{ range $i, $item := $element.description }}
+					<li>{{ $item }}</li>
+				{{ end }}
+				</ul>
+			</div>
+			{{ if ne (add $index 1) $len }}
+			<div class="col-md-8">
+				<hr />
+			</div>
+			{{ end }}
+		</div>
+		{{ end }}
+	</div>
+	</div>
+	{{ end }}
+
+	<div class="container mb-5 mt-5">
+		<div class="row justify-content-center">
+			<div class="col-8 text-center">
+				<h2>Custom Machine Learning Studio</h2>
+				<hr />
+			</div>
+		</div>
+		<div class="row align-items-center justify-content-center">
+			<div class="col-lg-6">
+				<img src="{{ $.Site.BaseURL }}images/ml-os/mlos-screenshot.png" alt="ML-OS Screenshot" class="img-fluid border border-secondary" />
+			</div>
+			<div class="col-lg-4 text-center">
+				<ul class="list-group list-group-flush h6 mb-3">
+					<li class="list-group-item"><strong>Visualize</strong> workflows and their dependencies</li>
+					<li class="list-group-item">Setup <strong>custom menu</strong> for simple drag and drops</li>
+					<li class="list-group-item"><strong>Share</strong> workflows or tasks</li>
+					<li class="list-group-item"><strong>Customize code</strong> on imported tasks for better results and performances</li>
+				</ul>
+				<p><a class="btn btn-outline-primary" href='{{ with .Site.GetPage "page" "get-started.md" }}{{ .URL }}{{ end }}'>Get Started</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="background-home-try mt-0">
+		<div class="background-white">
+			<div class="container">
+				<div class="row align-items-center justify-content-center">
+					<div class="col-lg-5 text-center">
+						<h2 class="mb-3 mt-4">For more information</h2>
+						<p class="h5 mb-3">
+							Request a call, a demo <br /> & ask questions.
+						</p>
+						<p>
+							<a href="mailto:contact@activeeon.com?Subject=[ProActive]%20Request%20for%20information" class="btn btn-light">Contact us</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	

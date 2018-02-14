@@ -1,0 +1,10 @@
+weight: 4
+id: "docker"
+title: "Simplified Docker Integration"
+subtitle: "Share files and variables across containers"
+image: "images/ml-os/screenshot-docker.png"
+date: "2017-02-12"
+description:
+  - Propagate variables through containers
+  - Share files through containers via our Dataspace
+  - Ensure all the libraries are available in any environment

@@ -1,0 +1,11 @@
+weight: 3
+id: "select-script"
+title: "Scripted resource selection"
+subtitle: "Select dynamically the resource required: GPU, RAM, OS, lib, etc."
+image: "images/ml-os/screenshot-selection-script.png"
+date: "2017-02-12"
+description:
+  - Select the most relevant resource based on hardware requirements (GPU, RAM, etc.)
+  - Based on location (Azure, AWS, OpenStack, VmWare, On-Prem, In France, In US, etc.)
+  - Based on variable information (latency, bandwidth, etc.)
+  - Based on OS configuration (Docker enabled, Python3 enabled, etc.)

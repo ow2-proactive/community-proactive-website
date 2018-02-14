@@ -64,6 +64,7 @@
 				    <p class="h5">Workflow engine to automate and orchestrate your business processes</p>
 				</div>
 			</div>
+			{{ $len := len .Site.Data.values }} 
 			{{ range $index, $element := sort .Site.Data.values "weight" }}
 			<div class="row align-items-center justify-content-md-center">
 				{{ if eq (mod $index 2) 0 }}
@@ -91,7 +92,7 @@
 				    <img src="{{ $.Site.BaseURL }}{{ $element.image }}" alt="{{ $element.title }}" class="img-fluid" />
 				</div>
 				{{ end }}
-				{{ if lt $index 5 }}
+				{{ if ne (add $index 1) $len }}
 				<div class="col-md-8">
 				    <hr />
 				</div>

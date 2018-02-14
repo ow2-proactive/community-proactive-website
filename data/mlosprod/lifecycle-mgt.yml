@@ -1,0 +1,9 @@
+weight: 4
+id: "lifecycle-mgt"
+title: "Lifecycle management of services and application"
+subtitle: "Manage lifecycles required for jobs or for cost purposes"
+image: "images/ml-os/lifecycle.png"
+date: "2017-02-12"
+description:
+  - Automatically trigger servers such as Visdom for visualization
+  - Monitor service utilization and resizing
