@@ -52,7 +52,7 @@ googleAnalytics = "UA-31966922-1"
 
 [[menu.main]]
   parent = "community"
-  name = "Github - Use Cases"
+  name = "Github & Use Cases"
   url  = "/community/"
   weight = 31
 
