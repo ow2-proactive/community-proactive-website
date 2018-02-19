@@ -1,4 +1,4 @@
-	<div class="jumbotron jumbotron-fluid background-image-getstarted">
+	<div class="jumbotron jumbotron-fluid background-image-getstarted mb-0">
 		<div class="container">
 		    <div class="row">
 		        <div class="col-sm-10 text-white">
@@ -12,28 +12,78 @@
 	</div>
 	
 	<div class="background-lightgray" id="mlos-prod">
-	<div class="container pt-5 mt-3 mb-3">
+	<div class="container pt-5 mt-0 mb-3">
 		<div class="row justify-content-center">
-			<div class="col-8 text-center">
+			<div class="col-md-8 text-center">
 				<h2>Build, Deploy, Automate Machine Learning at Scale</h2>
 				<hr />
 			</div>
 		</div>
-		<div class="row align-items-center justify-content-md-center">
-			<div class="col-8 text-center mb-3">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/mbrQxCf4lqM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<div class="row align-items-center justify-content-center">
+			<div class="col-md-8 text-center mb-3">
+				<div class="embed-responsive embed-responsive-21by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/mbrQxCf4lqM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div>
-		<div class="row align-items-center justify-content-md-center">
-			<div class="col-8 text-center mb-3">
+		<div class="row align-items-center justify-content-center">
+			<div class="col-md-8 text-center mb-3">
 				<p>
 					The Machine Learning Open Studio (ML-OS) from Activeeon is a complete platform for machine learning industrialization.
 					From build and deployment to automation and production offering governance and control through your workflows.
 				</p>
-				<p><a class="btn btn-lg btn-outline-secondary" href='{{ .Site.Params.Links.Activeeon.try }}' target="_blank">Get Started</a></p>
+				<p>
+					<a class="btn btn-lg btn-outline-secondary" href='{{ .Site.Params.Links.Activeeon.try }}' target="_blank">Get Started</a>
+					<a class="btn btn-lg btn-outline-secondary" href='{{ with .Site.GetPage "page" "get-started.md" }}{{ .URL }}{{ end }}'>3 steps tutorial</a>
+				</p>
 			</div>
 		</div>
 	</div>
+	</div>
+
+	<div class="container mb-5 mt-5">
+		<div class="row justify-content-center">
+			<div class="col-8 text-center">
+				<h2>Custom Machine Learning Studio</h2>
+				<hr />
+			</div>
+		</div>
+		<div class="row align-items-center justify-content-center">
+			<div class="col-lg-6">
+				<img src="{{ $.Site.BaseURL }}images/ml-os/mlos-screenshot.png" alt="ML-OS Screenshot" class="img-fluid border border-secondary" />
+			</div>
+			<div class="col-lg-4 text-center">
+				<ul class="list-group list-group-flush h6 mb-3">
+					<li class="list-group-item"><strong>Visualize</strong> workflows and their dependencies</li>
+					<li class="list-group-item">Setup <strong>custom menu</strong> for simple drag and drops</li>
+					<li class="list-group-item"><strong>Share</strong> workflows or tasks</li>
+					<li class="list-group-item"><strong>Customize code</strong> on imported tasks for better results and performances</li>
+				</ul>
+				<p><a class="btn btn-outline-primary" href='{{ .Site.Params.Links.Activeeon.try }}' target="_blank">Get Started</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="background-lightgray" id="mlos-prod">
+		<div class="container pt-5 mt-0 mb-3">
+			<div class="row justify-content-center">
+				<div class="col-md-8 text-center">
+					<h2>Ease data connection</h2>
+					<hr />
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-6 text-center mb-3">
+					<p class="mt-2 mb-3 h4">
+						Focus on what is important with pre-made connectors to data sources
+					</p>
+					<p class="mb-3">
+						Connect to the most common sources (Hadoop, SQL, Cassandra, MongoDB, S3, …) and formats (CSV, Excel, SAS, JSON, ...)
+					</p>
+					<img src="{{ $.Site.BaseURL }}images/ml-os/screenshot-data-connectors-1.png" alt="data connectors" class="img-fluid border border-secondary" />
+				</div>
+			</div>
+		</div>
 	</div>
 
 	{{ if gt (len .Site.Data.mlosdevs) 0 }}
@@ -85,8 +135,8 @@
 	{{ end }}
 
 	{{ if gt (len .Site.Data.mlosprod) 0 }}
-	<div class="background-lightgray" id="mlos-prod">
-	<div class="container pt-5 mt-3 mb-3">
+	<div class="background-lightgray">
+	<div class="container pt-5 mt-3 mb-3" id="mlos-prod">
 		<div class="row justify-content-center">
 			<div class="col-8">
 				<h2><small class="text-darkgrey">For Production</small> <br /> Orchestration and Control</h2>
@@ -119,29 +169,6 @@
 	</div>
 	{{ end }}
 
-	<div class="container mb-5 mt-5">
-		<div class="row justify-content-center">
-			<div class="col-8 text-center">
-				<h2>Custom Machine Learning Studio</h2>
-				<hr />
-			</div>
-		</div>
-		<div class="row align-items-center justify-content-center">
-			<div class="col-lg-6">
-				<img src="{{ $.Site.BaseURL }}images/ml-os/mlos-screenshot.png" alt="ML-OS Screenshot" class="img-fluid border border-secondary" />
-			</div>
-			<div class="col-lg-4 text-center">
-				<ul class="list-group list-group-flush h6 mb-3">
-					<li class="list-group-item"><strong>Visualize</strong> workflows and their dependencies</li>
-					<li class="list-group-item">Setup <strong>custom menu</strong> for simple drag and drops</li>
-					<li class="list-group-item"><strong>Share</strong> workflows or tasks</li>
-					<li class="list-group-item"><strong>Customize code</strong> on imported tasks for better results and performances</li>
-				</ul>
-				<p><a class="btn btn-outline-primary" href='{{ .Site.Params.Links.Activeeon.try }}' target="_blank">Get Started</a></p>
-			</div>
-		</div>
-	</div>
-
 	<div class="background-home-try mt-0">
 		<div class="background-white">
 			<div class="container">
@@ -153,6 +180,7 @@
 						</p>
 						<p>
 							<a href="mailto:contact@activeeon.com?Subject=[ProActive]%20Request%20for%20information" class="btn btn-light">Contact us</a>
+							<a href='{{ with .Site.GetPage "page" "get-started.md" }}{{ .URL }}{{ end }}' class="btn btn-light">3 steps tutorial</a>
 						</p>
 					</div>
 				</div>
