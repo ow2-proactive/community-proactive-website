@@ -11,7 +11,8 @@
 	<meta name="description" content={{ .Site.Params.Description }}>	
 	{{ end }}
 
-    {{ partial "analytics.html" . }}
+    {{ partial "g_analytics.html" . }}
+    {{ partial "g_tagmanager.html" . }}
 
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/app.css">

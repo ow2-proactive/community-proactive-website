@@ -1,12 +1,23 @@
-{{ partial "header.html" . }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
 
-    {{ partial "navbar.html" }}
+	{{ partial "head.html" . }}
 
+	<body>
+	
+	{{ partial "g_tagmanager-noscript.html" . }}
+    {{ partial "navbar.html" . }}
+    
     <h1>{{ .Title }}</h1>
     <h2>{{ .Date.Format "Mon, Jan 2, 2006" }}</h2>
     {{ .Content }}
     {{ .Kind }}
 
     <p>{{ .Site.BaseURL }}</p>
+    
+	{{ partial "footer.html" . }}
+	{{ partial "javascript.html" . }}
+	
+	</body>
+</html>
 
-{{ partial "footer.html" . }}

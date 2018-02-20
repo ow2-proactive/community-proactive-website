@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ProActive from Activeeon</title>
-    <meta name="description" content="Translate business processes to IT workflows with ProActive, a flexible orchestration and scheduling solution.">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/app.css">
-    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon.ico"> <!-- TODO: Change Favicon -->
-</head>
-<body>
+<html lang="{{ .Site.LanguageCode }}">
 
-    {{ partial "header.html" }}
+	{{ partial "head.html" . }}
 
+	<body>
+	
+	{{ partial "g_tagmanager-noscript.html" . }}
+	{{ partial "navbar.html" . }}
 
-    <h1>Default list</h1>
+	<h1>Default list</h1>
 
     <p>
     {{ range .Data.Pages }}
@@ -21,13 +16,9 @@
     {{ end }}
     </p>
 
-
-    <script type="text/javascript" src="{{ .Site.BaseURL }}js/jquery-3.2.1.slim.min.js"></script>
-    <script type="text/javascript" src="{{ .Site.BaseURL }}js/popper.min.js"></script>
-    <script type="text/javascript" src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
-
-
-    {{ partial "footer.html" }}
-
-</body>
+	{{ partial "footer.html" . }}
+	{{ partial "javascript.html" . }}
+	
+	</body>
 </html>
+
