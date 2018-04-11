@@ -9,6 +9,23 @@ description = "Release notes: release dates, performance improvements, new featu
 
 {{% container %}}
 
+## Version 8.0 (Aladdin) - Mar 2, 2018
+
+### Community Version
+
+- Azure cognitive Services (You want to know if you smile enough in your selfies? Check the Emotion API workflow ;) )
+- Bug Fixes
+- New templates
+
+### Enterprise Version
+
+- Job planner automation portal and service (Never been so easy to schedule a workflow!)
+- Workflow description and documentation link in the cloud & workflow automation portals (You still don't know what Iris dataset is? Time to read the documentation... )
+- Scala tasks (Yeah scala!)
+
+
+___
+
 ## Version 7.33 - Dec 11, 2017
 
 ### Community Version
