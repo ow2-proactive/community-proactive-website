@@ -1,3 +1,0 @@
-weight: 1
-title: "Master-Worker"
-description: "A Task-Based API for solving Master-Worker type computations (one Master, many workers)"

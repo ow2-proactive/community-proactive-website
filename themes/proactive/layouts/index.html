@@ -22,7 +22,6 @@
 			</div>
 		</div>
 
-		{{ if gt (len .Site.Data.news) 0 }}
 		<div class="background-lightgray border-bottom-grey">
 			<div class="container pb-3 pt-3">
 				<div class="row justify-content-md-center">
@@ -32,7 +31,7 @@
 				    </div>
 				</div>
 				<div class="row">
-				    {{ range $index, $element := sort .Site.Data.news "weight" }}
+				    {{ range $index, $element := sort .Site.Data.news.list "weight" }}
 				    <div class="col-sm-4 text-center">
 				        <h3 class="h4 text-orange">{{ $element.title}}</h3>
 				        <p>{{ $element.content }}</p>
@@ -53,10 +52,8 @@
 				</div>
 			</div>
 		</div>
-		{{ end }}
 
 
-		{{ if gt (len .Site.Data.values) 0 }}
 		<div class="container mb-3 mt-5">
 			<div class="row mb-5 justify-content-md-center">
 				<div class="col-md-8 text-center">
@@ -65,8 +62,8 @@
 				    <p class="h5">Workflow engine to automate and orchestrate your business processes</p>
 				</div>
 			</div>
-			{{ $len := len .Site.Data.values }} 
-			{{ range $index, $element := sort .Site.Data.values "weight" }}
+			{{ $len := len .Site.Data.values.list }} 
+			{{ range $index, $element := sort .Site.Data.values.list "weight" }}
 			<div class="row align-items-center justify-content-md-center">
 				{{ if eq (mod $index 2) 0 }}
 				<div class="col-md-3">
@@ -101,7 +98,6 @@
 			</div>
 			{{ end }}
 		</div>
-		{{ end }}
 
 		<div class="background-home-request">
 			<div class="background-orange-transparent">
@@ -116,7 +112,6 @@
 			</div>
 		</div>
 
-		{{ if gt (len .Site.Data.features) 0 }}
 		<div class="container mt-4">
 			<div class="row justify-content-md-center">
 				<div class="col-md-8 text-center">
@@ -125,7 +120,7 @@
 				</div>
 			</div>                                                                                                        
 			<div class="row justify-content-md-center">
-				{{ range $index, $element := sort .Site.Data.features "weight" }}
+				{{ range $index, $element := sort .Site.Data.features.list "weight" }}
 				<div class="col-md-4 text-center m-3">
 				    <h3>{{ $element.title }}</h3>
 				    <ul class="list-unstyled text-muted">
@@ -137,7 +132,6 @@
 				{{ end }}
 			</div>
 		</div>
-		{{ end }}
 
 		<div class="background-lightgray border-bottom-grey border-top-grey">
 			<div class="container pb-3 pt-3">
@@ -163,8 +157,7 @@
 				    </div>
 				    <div class="col-lg-5">
 				        <div class="row">
-				            {{ if gt (len .Site.Data.projects) 0 }}
-				            {{ range $index, $element := sort .Site.Data.projects "weight" }}
+				            {{ range $index, $element := sort .Site.Data.projects.list "weight" }}
 				            <div class="col-sm-5 background-verylightgray m-1 pt-2">
 				                <img src="{{ $.Site.BaseURL }}{{ $element.image }}" alt={{ $element.title }} class="img-fluid mb-2"/>
 				                <p><small>
@@ -177,7 +170,6 @@
 				                    <li><a href="{{ $element.link }}" target="_blank">more...</a></li>
 				                </small></ul>
 				            </div>
-				            {{ end }}
 				            {{ end }}
 				        </div>
 				    </div>
@@ -236,8 +228,13 @@
 			</div>
 		</div>
 
-		{{ partial "footer.html" . }}
-		{{ partial "javascript.html" . }}
+		{{ block "footer" . }}
+			{{ partial "footer.html" . }}
+		{{ end }}
+
+		{{ block "javascript" . }}
+			{{ partial "javascript.html" . }}
+		{{ end }}
 	
 	</body>
 </html>

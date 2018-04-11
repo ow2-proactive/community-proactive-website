@@ -1,9 +1,0 @@
-weight: 1
-id: "error-mgt"
-title: "Error management and alerts"
-subtitle: "Setup simple recovery rules in case of errors  "
-image: "images/ml-os/error-mgt.png"
-date: "2017-02-12"
-description:
-  - Advanced error management policies (kill job, suspend dependent tasks, ignore, etc.)
-  - Setup alerts on error

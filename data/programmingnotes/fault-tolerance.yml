@@ -1,3 +1,0 @@
-weight: 3
-title: "Fault Tolerance"
-description: "Application can be configured to be self-healing and restart automatically from latest valid checkpoint."

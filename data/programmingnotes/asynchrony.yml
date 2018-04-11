@@ -1,3 +1,0 @@
-weight: 6
-title: "Asynchrony"
-description: "Calls on Active Objects are asynchronous: an answer, a future, is provided without waiting for the end of the result processing."

@@ -1,5 +1,3 @@
-#baseURL = "http://localhost:1313/"
-#baseURL = "https://ow2-proactive.github.io/community-proactive-website/"
 baseURL = "https://proactive.activeeon.com/"
 #baseURL = "/"
 title = "ProActive from Activeeon"
@@ -9,7 +7,7 @@ languageCode = "en-us"
 googleAnalytics = "UA-31966922-1"
 
 [params]
-  description = "Translate business processes to IT workflows with ProActive, a flexible orchestration and scheduling solution."
+  description = "Job Scheduling, Workload Automation, Orchestration & Metascheduling on-premises and on all clouds."
   
 
 [permalinks]
