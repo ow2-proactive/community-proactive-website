@@ -1,7 +1,7 @@
 weight: 1
 id: "res-agnostic"
 title: "Develop Once, Deploy Anywhere"
-subtitle: "Become agnostic to the resource from dev to prod"
+subtitle: "Become agnostic to the resource from dev to prod. Deploy Machine Learning in production in minutes."
 image: "images/ml-os/screenshot-resources.png"
 date: "2017-02-12"
 description:
