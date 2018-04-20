@@ -37,7 +37,7 @@ Then, click on execute and visualize the execution on the [scheduler portal](htt
 ## Step 4: Next Steps
 ___
 
-At this stage, you've succesfully executed your first workflow. Do not hesitate to hang around and go through [some tutorials](https://try.activeeon.com), follow [some blog articles](https://blog.activeeon.com) or read [the documentation](https://doc.activeeon.com).
+At this stage, you've succesfully executed your first workflow. Do not hesitate to hang around and go through [some tutorials](https://try.activeeon.com), follow [some blog articles](http://blog.activeeon.com) or read [the documentation](https://doc.activeeon.com).
 
 For any other enquiry, please, do not hesitate to [send an email](mailto:contact@activeeon.com?Subject=[ProActive]%20Request%20for%20information).
 

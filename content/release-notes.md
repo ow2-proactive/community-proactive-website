@@ -23,7 +23,6 @@ description = "Release notes: release dates, performance improvements, new featu
 - Workflow description and documentation link in the cloud & workflow automation portals (You still don't know what Iris dataset is? Time to read the documentation... )
 - Scala tasks (Yeah scala!)
 
-
 ___
 
 ## Version 7.33 - Dec 11, 2017
