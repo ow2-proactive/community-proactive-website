@@ -9,6 +9,40 @@ description = "Release notes: release dates, performance improvements, new featu
 
 {{% container %}}
 
+## Version 8.2 (Contra III) - Jun 26, 2018
+
+- Database as service : MySQL
+- Copy/cut/past catalog objects in portal
+- Change kind of workflows 
+- Edit catalog objects directly in the portal
+- Enriched the contextual right-click menu in the portals
+- Permission per Web validations
+- POSTPONE_TO_NEXT_WORKING_DAY rule in Job Planner
+- Use node-sources from the catalog directly in the RM portal
+
+___
+
+## Version 8.1 (Bubble Bubble) - May 30, 2018
+
+- New deep learning tasks for image segmentation. 
+- New anomaly detection algorithms in the machine-learning bucket.
+- More Data connectors with both export and import modes from SQL, NoSQL, and Cloud-based databases like Azure.  
+- Added examples of Generative Adversarial Networks (GANs) into the deep-learning workflows. 
+- Job Planner portal, service and documentation 
+    - UI Improvements
+    - right click functionalities
+    - tooltips
+    - collapsing menus
+    - errors messages
+    - plan automation services
+    - many more...
+- Cloud automation portal (many UI improvements and more stability).
+- All Portals have now workflows documentation link.
+- Python connector client (Submit your python lambdas to ProActive natively in Python).
+- Scalable rendering of the RM portal (20k responsive nodes without problems).
+
+___
+
 ## Version 8.0 (Aladdin) - Mar 2, 2018
 
 ### Community Version
